@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Vending Machine</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Additional CSS files here -->
+    <link rel="stylesheet" href="css/home.css">
+
+  </head>
+  <body>
+
+    <div class= "Top-container"> 
+        <h1 id= "titleName" >Vending Machine</h1>
+        <hr>
+    </div>
+
+    <!-- Left container/div with vending items  -->
+    <div id = "containerLeft" >
+    </div>
+
+    <!-- Right container with buttons/functions -->
+    <div id = "containerRight">
+        <div class = "right"> <h3>
+            <h3>Total $ In</h3>
+            <form role="form">
+                <div id="">
+                    <input id="itemPurchase" class="form-control" placeholder="$0.00" readonly>
+                </div>
+                <br>
+            </form>
+                <button type="button" id= "dollarButton" class="btn btn-light">Add Dollar</button>
+                <br>
+                <button type="button" id= "quarterButton" class="btn btn-light">Add Quarter</button>
+                <br>
+                <button type="button" id= "dimeButton" class="btn btn-light">Add Dime</button>
+                <br>
+                <button type="button" id= "nickelButton" class="btn btn-light">Add Nickel</button>
+        </h3>
+        </div>
+        <br>
+        <div class = "right" id="txt" >
+            <hr>
+            <h3>Messages</h3>
+            <div id="insertmsg" ></div>
+                <div class="form-group" id = "itemForm">
+                    <input id="displayID" class="form-control" placeholder="Item #:" readonly>
+                </div>
+                <button id="makePurchase" type="button" class="btn btn-outline-light">Make Purchase</button>
+            </form>
+
+        </div>
+        <br>
+        <div class = "right">
+            <hr>
+            <h3>Change:</h3>
+            <div>
+                <form role="form">
+                    <div class="form-group">
+                        <input class="form-control" id="changeForm" placeholder="$" readonly>
+                    </div>
+                </form>
+                <button type="button" id= "changeButton" class="btn btn-light" onClick="window.location.reload();" >Change Return</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- use the the full jQuery build, NOT the slim build-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      
+    <!-- custom js files -->
+    <script src="js/vending.js"></script>
+
+    </body>
+</html>
